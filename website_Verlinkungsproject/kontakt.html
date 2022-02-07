@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Kontakt</title>
+<link href="img/favIcon.png" rel="icon">
+<link rel="apple-touch-icon" sizes="57x57" href="FavIcon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="FavIcon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="FavIcon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="FavIcon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="FavIcon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="FavIcon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="FavIcon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="FavIcon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="FavIcon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="FavIcon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="FavIcon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="FavIcon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="FavIcon/favicon-16x16.png">
+<link rel="manifest" href="FavIcon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<style>
+body {
+	text-align: center;
+}
+h1,h2 {
+	font-size: 30px;
+	background: cyan;
+}
+div {
+	margin: auto;
+}
+textarea {
+	width: 400px;
+	height: 200px;
+}
+hr {
+	width: 50%;
+}
+</style>
+</head>
+
+<body>
+<h1>Kontakt</h1>
+<div>
+	<nav> <a href="index.html">Home</a> | <a href="seite1.html">Seite 1</a> | <a href="seite2.html">Seite 2</a> |<a href="reiseformular.html">Reise Formular</a> | <a href="kontakt.html">Kontakt uns</a></nav>
+	<main>
+		<h2> Bitte kontakt uns über:</h2>
+		<p><a id="tele" href="tel:+4915734786236">+49 (0)157 347 86238</a> | <a  href="mailto:meine@mail.de">meine@mail.de</a></p>
+		
+		<hr>
+		<form action="mailscript.php" method="post" >
+			<!-- <p>Email:<input type="email" name="Email" placeholder="Enter your email"></p> -->
+			<p>Haben Sie allgemeine Fragen oder haben Sie den richtigen Ansprechpartner nicht gefunden, dann senden Sie uns doch einfach eine Nachrricht :<br>
+				<textarea name="nachrricht" placeholder="Enter your question" > </textarea>
+			</p>
+			<p>
+				<input type="submit" value="submit">
+			</p>
+			<!-- <input type="button" onclick="alert('i am working!')" value="Click Me!">  -->
+		</form>
+		<h2>Listen to arabic music</h2>
+		<audio controls id="musi"> 
+			<!-- <audio controls autoplay> -->
+			<source src="Ishtar Alabina - Helwa Ya Baladi.mp3" type="audio/mpeg">
+			<source src="Ishtar Alabina - Helwa Ya Baladi.ogg" type="audio/ogg">
+			your Browser doesn´t support the audio element. </audio>
+		<br/>
+			<a href="http://melody4arab.com/music/lebnan/dalida/arabian_songs/Helwa_Ya_Baladi_melody4arab.com.mp3">Dalida song</a>
+					<script>
+					<!--achtung Script steht nach dem Audiotag-->
+						var hans = document.getElementById('musi');
+						hans.volume = 0.3;
+					</script> 
+		<br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7291203.186812329!2d26.381665838577685!3d26.834932658557015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2zw4RneXB0ZW4!5e0!3m2!1sde!2sde!4v1635511670021!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		
+	</main>
+	<footer>&copy; Alle Rechte den Teachern</footer>
+</div>
+</body>
+</html>

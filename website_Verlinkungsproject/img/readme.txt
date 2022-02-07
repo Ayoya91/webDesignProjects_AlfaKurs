@@ -1,0 +1,1 @@
+all pics rights returned to google and their photographers

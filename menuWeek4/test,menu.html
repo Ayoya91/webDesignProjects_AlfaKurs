@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Name</title>
+<style>
+	
+	
+	
+	
+	
+	*{
+		margin:0;
+		padding: 0;
+	}
+	html {
+		font: 1rem Verdana, sans-serif;
+	}
+	main {
+		display: block;
+	}
+	
+	
+	header{
+		background: #000;
+		color:orange;
+		height:100px;
+		padding: 0.5rem;
+	}
+	
+	nav{
+		background: lightgreen;
+		position:fixed;
+		top:0.5rem;
+		
+		right:-200px;
+		width:200px;
+		transition: 0.5s;
+	}
+	
+	
+	
+	nav ul{
+		list-style: none;
+		
+	}
+	
+	nav p{
+		font-size: 1.5rem;
+		position: absolute;
+		left:-40px;
+		top:0;
+		background: yellow;
+		width:40px;
+		text-align: center;
+		line-height: 40px;
+	}
+	
+	nav a{
+		text-decoration: none;
+		color:#000;
+		line-height: 40px;
+		border-bottom: 1px solid;
+		display: block;
+		padding-left: 1rem;
+		
+	}
+	
+	nav label{
+		display: block;
+		cursor: pointer;
+		transition: 0.5s 0.5s;
+	}
+	#checkernav{
+		display:none;
+	}
+	
+	#checkernav:checked ~ nav {
+		right:0;
+	}
+	
+	
+	#checkernav:checked ~ nav  p  label {
+		transform: rotate(45deg);
+	}
+	
+	
+	/*
+	
+	
+	
+	*/
+
+</style>
+</head>
+
+<body>
+	<header>Header</header>
+	<input type="checkbox" id="checkernav">
+	<nav>
+		<p><label for="checkernav">+</label></p>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Laden</a></li>
+			<li><a href="#">Mehlmützen</a></li>
+			<li><a href="#">Brot & Brötchen</a></li>
+			<li><a href="#">Steusel & Co.</a></li>
+		</ul>
+	</nav>
+	<main>
+		<article>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium est obcaecati mollitia molestiae, eos, aliquid veritatis. Eos qui, tempora cumque.</p>
+		</article>
+	</main>
+</body>
+</html>

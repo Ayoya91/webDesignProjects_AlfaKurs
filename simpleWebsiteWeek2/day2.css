@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+
+#all{
+	/*margin: auto;*/
+	 margin: 20px 150px;
+	
+}
+header{
+	background-color: darkblue;
+	height:100px;
+
+}
+.leftim{
+	float:left;
+}
+.imgs {
+	
+	float:right;
+}
+h1{
+	padding-top:20px;
+	color:white;
+	
+}
+
+h5{
+	color:white;
+	/*padding-left:100px;
+	padding-bottom: 30px;*/
+	
+}
+#logo{
+	height:80px;
+	width:80px;
+	float:left;
+	
+}
+nav{
+	height:60px;
+}
+
+nav,footer{
+	background-color: cornflowerblue;
+}
+nav a{
+	font-size: 30px;
+	color: lightgoldenrodyellow;
+	text-decoration: none;
+}
+#all{
+	background-color:white;
+}
+article{
+	float:left;
+}
+.inhalt1{
+	
+	width:80%;
+	background-color: mediumaquamarine;
+	
+}
+
+#artimg
+{
+	float:right;
+}
+
+.box{
+	background-color: aliceblue;
+	width:80%;
+	float:left;
+}
+.inhalt4{
+	background-color: azure;
+	width:20%;
+	float:left;
+}
+
+
+/*.box1{
+	background-color: aliceblue;
+	
+	width:26.66%;
+	float:left;
+	
+}
+.box2{
+	background-color:aqua;
+	
+	width:26.66%;
+	float:left;
+	
+}
+.box3{
+	background-color:aquamarine;
+	
+	width:26.66%;
+	float:left;
+	
+}*/
+
+.inhalt2{
+	
+	width:40%;
+	background-color: lightgoldenrodyellow;
+	float:left;
+}
+.inhalt3{
+	
+	width:40%;
+	background-color: honeydew;
+	float:left;
+}
+footer{
+	height: 50px;
+}
+p{
+	text-align: justify;}
+.clearfix{
+	clear:both;
+}

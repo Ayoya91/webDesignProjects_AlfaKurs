@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Layla effect</title>
+	<style>
+		* {
+			margin:0;
+			padding:0;
+		}
+		main{
+			display:block;
+		}
+		html{
+			font: 1rem Verdana, "sans-serif";
+		}
+		img{
+			max-width: 100%;
+		}
+		.frames{
+			border:2px dotted red;
+			width:500px;
+			height:300px;
+			position:relative;
+			overflow: hidden;
+			float: left;
+		}
+		
+		.frames h3{
+			position: absolute;
+			color:white;
+			/*background: rgba(253,253,253,0.76);*/
+			right:0;
+			left:0;
+			bottom:70%;
+			margin:20px 80px;
+			padding: 5px;
+			font-size: 2.0em;
+			text-align:center;
+			transition: 0.5s;
+		}
+		.frames p{
+			position: absolute;
+			color:white;
+			right:0;
+			left:0;
+			bottom:30px;
+			padding: 5px;
+			margin:30px;
+			text-align:center;
+			transition: 0.5s;
+			
+			opacity:0;
+		}
+		.frames:before {
+        content:"";                    /*leerer Inhalt*/
+        display: block;                /*als Block*/
+        border-right: 2px solid orange;/*bekommt border rechts*/
+        border-left: 2px solid orange;/*und links*/
+        position: absolute;            /*wird absolut im Rahmen positioniert*/
+        top: 10px;
+        right: 20px;
+        bottom: 10px;
+        left:20px;
+        z-index: 1;                    /*wird in den Vordergrund gebracht*/
+        transform: scaleY(0);          /*wird in y-Achse auf 0 geschrumpft*/
+        opacity: 0;                    /*bekommt die Deckkraft 0*/
+        transition: 0.5s;
+      /*  background: rgba(0,0,0,0.3);*/
+    }
+    .frames:hover:before {
+        transform: scaleY(1);          /*bekommt volle Höhe*/
+        opacity: 1;                    /*wird sichtbar*/
+    }
+    /* (oben-unten) ---------------------*/
+    .frames:after {
+        content:"";
+        display: block;
+        border-top: 2px solid orange;
+        border-bottom: 2px solid orange;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        bottom: 20px;
+        left:10px;
+        transform: scaleX(0);
+        z-index: 1;
+        opacity: 0;
+        transition: 0.5s;
+     /*   background: rgba(0,0,0,0.3);*/
+    }
+    .frameshover:after {
+        transform: scaleX(1);
+        opacity: 1;
+    }
+    
+		.frames .hoverimg{
+			position: absolute;
+			top:0;
+			left:0;
+			transition:0.5s;
+			
+		
+		}
+		
+		.frames:hover .hoverimg{
+			opacity:0.7;
+			padding:5px 10px;
+			width:100%;
+			
+		}
+		
+		.frames:hover h3{
+			bottom:50%;
+			opacity:0.7;
+			
+			/*border-bottom: 2px solid white;
+			border-top: 2px solid white;
+			border-left: 6px solid white;
+			border-right: 6px solid white;*/
+		}
+		.frames:hover  p{
+			opacity:0.7;
+			transform:translateY(-30px);
+		}
+		.clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+		/*.hoverimg::before{
+			content="";
+		display:block;
+		border-right:2px solid red;
+		border-left:2px solid red;
+		position: absolute;
+		top:10px;
+		right:20px;
+		bottom:10px;
+		left:20px;
+		z-index: 1;
+		opacity:0;
+		transform:scaleY(0);
+		transition: 0,5s;
+		}
+		
+		
+		.hoverimg::after{
+			content="";
+		display:block;
+		border-top:2px solid white;
+		border-bottom:2px solid white;
+		position: absolute;
+		top:20px;
+		right:10px;
+		bottom:20px;
+		left:10px;
+		z-index: 1;
+		opacity:0;
+		transform:scaleX(0);
+		transition: 0,5s;
+		}
+		.hoverimg:hover::after{
+			transform: scaleX(1);
+			opacity:1;
+		}
+		
+		*/
+	</style>
+</head>
+
+<body>
+	
+	<div class="clearfix">
+		<figure class="frames">
+		 <!--<img class="basicimg" src="../../img/b11.jpg" alt="img">-->
+		 <img class="hoverimg" src="../../img/b6.jpg" alt="img">
+		<figcaption>
+			<h3>Layla</h3>
+			<p>When layla appears, she brings eternal summer along.</p>
+		</figcaption>
+			
+		</figure>
+	</div>
+</body>
+</html>

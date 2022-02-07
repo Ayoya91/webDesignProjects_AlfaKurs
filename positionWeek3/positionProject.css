@@ -1,0 +1,161 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	
+background: rgba(226,226,226,1);
+background: -moz-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+background: -webkit-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: -o-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: -ms-linear-gradient(top, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+background: linear-gradient(to bottom, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0 );
+margin:0 auto;
+width:100%;
+}
+.wrap{
+	max-width:100%;
+	/*max-width: 1200px;*/
+	margin:0 auto;
+	
+	
+}
+header{
+	background-image: url("teddy.jpg");
+	/*background-size: cover;*/
+	height:700px;
+	background-repeat: no-repeat;
+	width:100%;
+	background-size: 100%;
+	position: relative;
+}
+/*header ::before{
+	content:"\2B98";
+	color:gray;
+	font-size: 4.0em;
+	position:absolute;
+	
+	
+	left:10px;
+	bottom:80px;
+}
+header ::after{
+	content:" \2B9A";
+	color:gray;
+	font-size: 4.0em;
+	position:absolute;
+	right:10px;
+	bottom:80px;
+}*/
+.linkarrow , .rightarrow{
+	color:rgba(84,84,84,0.80);
+	font-size: 7.0em;
+	position:absolute;
+	top:30%;
+	text-decoration: none;
+	padding:0 30px;
+}
+.linkarrow{
+	left:0;
+}
+.rightarrow{
+	 right:0;
+}
+.linkarrow:hover{
+	color:white;
+}
+.rightarrow:hover{
+	color:white;
+}
+
+.heuberschrift{
+	background-color:rgba(0,0,0,0.85);
+	color:white;
+	border-radius: 15px;
+	text-align:left;
+	position: relative;
+	padding:25px;
+	margin:0 auto;
+	top:-600px;
+	width:50%;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 5px 0px gray;
+	
+}
+.gallery{
+	margin:0 auto;
+	display:flex;
+	width:80%;
+	position: relative;
+}
+
+.preis{
+	border-radius: 10px;
+	background-color: red;
+	width:30px;
+	height:20px;
+	padding:5px;
+	position: absolute;
+	top:-30px;
+	left:-10px;
+}
+
+.neu{
+	border-radius: 10px;
+	background-color: green;
+	width:30px;
+	height:20px;
+	padding:5px;
+	position: absolute;
+	top:-30px;
+	right:-10px;
+}
+
+
+.article1{
+	background-color: white;
+	border:1px solid white;
+	text-align: center;
+	flex:1;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 5px 5px 5px 0px gray;
+	
+	/*width:250px;*/
+	/*display: inline-block;*/
+	
+	padding: 20px;
+	position: relative;
+	top:-250px;
+	margin:10px;
+}
+.produkt{
+	text-align: left;
+}
+.bild{
+	
+	max-width:100%;
+}
+
+/*.absolute-in-relative{
+	background-color: green;
+	color:white;
+	padding: 10px;
+	font-size: 1.0em;
+	font-weight: bold;
+	border-radius: 10px;
+	postion:absolute;*/
+	
+	/*top:0;
+	left:0; it will center it in the red box top left*/
+	/*top:-100px;
+	right:0;
+}*/
+
+/*.relativ{
+	position:relative;
+	margin:0 auto;
+	
+	
+}*/
